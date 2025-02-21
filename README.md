@@ -16,8 +16,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Github](https://github.com/rukhulkirom/product-preview-card)
-- Live Site URL: [Netlify](https://product-preview-card-rukhul.netlify.app/)
+- Solution URL: [Github](https://github.com/rukhulkirom/four-card-feature)
+- Live Site URL: [Netlify](https://four-card-feature-rukhul.netlify.app/)
 
 ## My process
 
