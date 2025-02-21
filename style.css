@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --grey-500: hsl(234, 12%, 34%);
+  --grey-400: hsl(212, 6%, 44%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Poppins", serif;
+  background-color: var(--light-gray);
+  color: var(--grey-400);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+header {
+  text-align: center;
+}
+
+header h2 {
+  font-size: 2.26rem;
+  font-weight: 200;
+  color: var(--grey-500);
+}
+
+header h3 {
+  font-size: 2.26rem;
+  font-weight: 600;
+  color: var(--grey-500);
+}
+
+header p {
+  max-width: 600px;
+  margin: 20px auto 60px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 7px;
+  padding: 30px;
+  text-align: right;
+}
+
+.card-text {
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.card.supervisor {
+  border-top: 4px solid var(--cyan);
+}
+.card.team-builder {
+  border-top: 4px solid var(--red);
+}
+.card.karma {
+  border-top: 4px solid var(--orange);
+}
+.card.calculator {
+  border-top: 4px solid var(--blue);
+}
+
+.card-text h5 {
+  font-size: 1.3rem;
+  color: var(--grey-500);
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card.supervisor,
+.card.calculator {
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 490px) {
+  header h2 {
+    font-size: 1.46rem;
+  }
+
+  header h3 {
+    font-size: 1.46rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card-text {
+    padding-bottom: 30px;
+  }
+}
